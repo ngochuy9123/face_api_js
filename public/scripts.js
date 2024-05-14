@@ -128,14 +128,14 @@ function captureImage() {
   capturedImg.classList.remove("hidden");
   const imageData = canvasImg.toDataURL("image/jpeg");
 
-  let data = { image: imageData };
-  let url = "http://127.0.0.1:5000/processImg";
+  // let data = { image: imageData };
+  // let url = "http://127.0.0.1:5000/processImg";
 
-  postData(url, data).then((data) => {
-    console.log(data);
-    capturedImg.src = "data:image/jpeg;base64," + data.image;
-    addToInput(data.username, data.email, data.phone);
-  });
+  // postData(url, data).then((data) => {
+  //   console.log(data);
+  //   capturedImg.src = "data:image/jpeg;base64," + data.image;
+  //   addToInput(data.username, data.email, data.phone);
+  // });
 }
 
 async function postData(url, data) {
