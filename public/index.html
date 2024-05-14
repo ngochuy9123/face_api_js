@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+    <div class="main-wrap">
+        <div class="box-container">
+          
+            <div class="img-box" id="img-box">
+                <img src="" alt="" class="img_webcam" id="capturedImage">
+                <div class="boxcam">
+                  <video id="video"></video>
+                  <canvas id="canvas"></canvas>
+                </div>
+                
+            </div>
+            
+            <div class="form-wrap">
+                <div class="top-signup">
+                    <span>Don't you have an account?</span>
+                    <button id="openCamera" autoplay>Open WebCam</button>
+                    <button id="capture" autoplay>Capture</button>
+                </div>
+                <div class="mid-container">
+                    <h1>Welcome Back</h1>
+                    <h6>Login your Account</h6>
+                    <form action="" class="form">
+                        <label for="Username">Username</label></br>
+                        <input type="text" name="username" id="username" placeholder="Your email"> 
+                        </br></br>
+                        <label for="Password">Email</label></br>
+                        <input type="text" name="email" id="email" placeholder="Your password">
+                        </br></br>
+                        <label for="Password">Phone</label></br>
+                        <input type="text" name="phone" id="phone" placeholder="Your password">
+                        <br>
+                        <span><a href="#" class="fg-pass">Forgot password?</a></span>
+                        <br>
+                        <button type="submit" class="login-btn">Login</button>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+  </body>
+  <script src="./face-api.min.js"></script>
+<script src="./scripts.js"></script>
+
+</html>
+
